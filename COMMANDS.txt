@@ -1,0 +1,397 @@
+═══════════════════════════════════════════════════════════════════════
+                    🎯 QUICK COMMAND REFERENCE
+═══════════════════════════════════════════════════════════════════════
+
+📁 NAVIGATE TO PROJECT:
+───────────────────────────────────────────────────────────────────────
+cd portfolio
+
+
+🚀 DEVELOPMENT COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Start Development Server:
+  npm run dev
+  → Opens at: http://localhost:5173
+  → Hot reload enabled
+  → Press Ctrl+C to stop
+
+Start on Different Port:
+  npm run dev -- --port 3000
+  → Opens at: http://localhost:3000
+
+
+📦 BUILD COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Build for Production:
+  npm run build
+  → Creates 'dist' folder
+  → Optimized & minified
+  → Ready to deploy
+
+Preview Production Build:
+  npm run preview
+  → Test production build locally
+  → Opens at: http://localhost:4173
+
+
+🔧 MAINTENANCE COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Install Dependencies:
+  npm install
+  → Installs all packages
+  → Use if node_modules deleted
+
+Clean Install:
+  rm -rf node_modules package-lock.json
+  npm install
+  → Fresh install of dependencies
+  → Use if having issues
+
+Update Dependencies:
+  npm update
+  → Updates packages to latest versions
+  → Check package.json first
+
+
+📊 PROJECT INFO:
+───────────────────────────────────────────────────────────────────────
+
+List Installed Packages:
+  npm list --depth=0
+  → Shows direct dependencies
+
+Check for Outdated Packages:
+  npm outdated
+  → Shows available updates
+
+View Package Info:
+  npm view react
+  → Shows package details
+
+
+🐛 DEBUGGING COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Check for Errors:
+  npm run build
+  → Will show any build errors
+
+Run ESLint:
+  npx eslint src/
+  → Check code quality
+  → Find issues
+
+Clear Vite Cache:
+  rm -rf node_modules/.vite
+  npm run dev
+  → Use if having cache issues
+
+
+🌐 GIT COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Initialize Git:
+  git init
+  git add .
+  git commit -m "Initial commit: Portfolio website"
+
+Connect to GitHub:
+  git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
+  git branch -M main
+  git push -u origin main
+
+Update Repository:
+  git add .
+  git commit -m "Update: Your changes"
+  git push
+
+
+🚀 DEPLOYMENT COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+VERCEL (Recommended):
+  1. Install Vercel CLI:
+     npm install -g vercel
+
+  2. Deploy:
+     vercel
+     → Follow prompts
+     → Get live URL
+
+  3. Deploy to Production:
+     vercel --prod
+
+
+NETLIFY:
+  1. Install Netlify CLI:
+     npm install -g netlify-cli
+
+  2. Deploy:
+     netlify deploy
+     → Follow prompts
+
+  3. Deploy to Production:
+     netlify deploy --prod
+
+
+GITHUB PAGES:
+  1. Install gh-pages:
+     npm install -D gh-pages
+
+  2. Add to package.json scripts:
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+
+  3. Update vite.config.js:
+     base: '/your-repo-name/'
+
+  4. Deploy:
+     npm run deploy
+
+
+📱 TESTING COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Open in Browser:
+  Windows:  start http://localhost:5173
+  Mac:      open http://localhost:5173
+  Linux:    xdg-open http://localhost:5173
+
+Test Mobile View:
+  → Open http://localhost:5173
+  → Press F12 (DevTools)
+  → Click device toolbar icon
+  → Select device to emulate
+
+
+🔍 SEARCH COMMANDS (VS Code):
+───────────────────────────────────────────────────────────────────────
+
+Find in Files:
+  Ctrl + Shift + F  (Windows/Linux)
+  Cmd + Shift + F   (Mac)
+
+Find & Replace in Files:
+  Ctrl + Shift + H  (Windows/Linux)
+  Cmd + Shift + H   (Mac)
+
+
+📝 CUSTOMIZATION SHORTCUTS:
+───────────────────────────────────────────────────────────────────────
+
+Update Name (Find & Replace):
+  Find:    "Your Name"
+  Replace: "John Smith"
+  Files:   src/components/*.jsx
+
+Update Email (Find & Replace):
+  Find:    your.email@example.com
+  Replace: john.smith@gmail.com
+  Files:   src/components/*.jsx
+
+Update GitHub (Find & Replace):
+  Find:    https://github.com
+  Replace: https://github.com/johnsmith
+  Files:   src/components/*.jsx
+
+
+🎨 STYLE CUSTOMIZATION:
+───────────────────────────────────────────────────────────────────────
+
+Edit Colors:
+  Open: tailwind.config.js
+  Edit: colors section
+  Save & reload browser
+
+Edit Global Styles:
+  Open: src/index.css
+  Add custom CSS
+  Save & reload browser
+
+
+📚 USEFUL ALIASES (Optional - Add to terminal):
+───────────────────────────────────────────────────────────────────────
+
+# Add to ~/.bashrc or ~/.zshrc
+
+alias dev="npm run dev"
+alias build="npm run build"
+alias preview="npm run preview"
+alias deploy="npm run deploy"
+
+
+🔥 EMERGENCY FIXES:
+───────────────────────────────────────────────────────────────────────
+
+Nothing Works - Nuclear Option:
+  1. Delete everything:
+     rm -rf node_modules package-lock.json dist
+
+  2. Reinstall:
+     npm install
+
+  3. Try again:
+     npm run dev
+
+Port Already in Use:
+  Windows:  netstat -ano | findstr :5173
+            taskkill /PID [process_id] /F
+
+  Mac/Linux: lsof -ti:5173 | xargs kill -9
+
+Cannot Find Module:
+  npm install [module-name]
+  → Installs missing module
+
+
+📊 FILE SIZE COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Check Dist Size:
+  npm run build
+  du -sh dist
+  → Shows production build size
+
+Check Project Size:
+  du -sh .
+  → Shows total project size
+
+Check Node Modules Size:
+  du -sh node_modules
+  → Usually ~45MB
+
+
+🌐 NETWORK COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Access from Other Devices (Same Network):
+  npm run dev -- --host
+  → Shows local IP address
+  → Access from phone/tablet
+
+Check Network:
+  ipconfig        (Windows)
+  ifconfig        (Mac/Linux)
+  → Shows your IP address
+
+
+⚡ PERFORMANCE COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Analyze Bundle Size:
+  npm run build
+  npx vite-bundle-visualizer
+  → Visual representation of bundle
+
+Optimize Images (if needed):
+  npx imagemin src/assets/* --out-dir=src/assets/optimized
+
+
+🔒 SECURITY COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+Check for Vulnerabilities:
+  npm audit
+  → Shows security issues
+
+Fix Vulnerabilities:
+  npm audit fix
+  → Automatically fix issues
+
+Force Fix (Breaking Changes):
+  npm audit fix --force
+  → Use with caution!
+
+
+📖 DOCUMENTATION COMMANDS:
+───────────────────────────────────────────────────────────────────────
+
+View Documentation:
+  Windows:  start START_HERE.md
+  Mac:      open START_HERE.md
+  Linux:    xdg-open START_HERE.md
+
+List All Docs:
+  ls -la *.md *.txt
+  → Shows all documentation files
+
+
+═══════════════════════════════════════════════════════════════════════
+                    🎯 MOST USED COMMANDS
+═══════════════════════════════════════════════════════════════════════
+
+Development:
+  cd portfolio
+  npm run dev              ← Start here!
+  → Press Ctrl+C to stop
+
+Production:
+  npm run build           ← Build for production
+  npm run preview         ← Test production build
+
+Deploy:
+  vercel --prod           ← Deploy to Vercel
+  netlify deploy --prod   ← Deploy to Netlify
+  npm run deploy          ← Deploy to GitHub Pages
+
+
+═══════════════════════════════════════════════════════════════════════
+                    📋 COMMAND CHEATSHEET
+═══════════════════════════════════════════════════════════════════════
+
+┌────────────────────────────────────────────────────────────────┐
+│ ACTION               │ COMMAND                                  │
+├────────────────────────────────────────────────────────────────┤
+│ Start Dev Server     │ npm run dev                              │
+│ Build Production     │ npm run build                            │
+│ Preview Build        │ npm run preview                          │
+│ Install Packages     │ npm install                              │
+│ Update Packages      │ npm update                               │
+│ Check for Issues     │ npm audit                                │
+│ Fix Issues           │ npm audit fix                            │
+│ Deploy (Vercel)      │ vercel --prod                            │
+│ Deploy (Netlify)     │ netlify deploy --prod                    │
+│ Deploy (GH Pages)    │ npm run deploy                           │
+│ Git Commit           │ git add . && git commit -m "message"     │
+│ Git Push             │ git push                                 │
+│ Stop Server          │ Ctrl + C                                 │
+└────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════
+                    💡 TIPS & TRICKS
+═══════════════════════════════════════════════════════════════════════
+
+1. Keep Dev Server Running:
+   → Open one terminal for "npm run dev"
+   → Open another terminal for git commands
+   → Changes auto-reload!
+
+2. Use Tab Completion:
+   → Type "npm run " and press Tab
+   → Shows all available scripts
+
+3. Check What's Running:
+   Windows:  netstat -ano
+   Mac/Linux: lsof -i
+   → Shows all active ports
+
+4. Quick Restart:
+   → Press Ctrl+C
+   → Up arrow (previous command)
+   → Enter
+   → Restarts quickly!
+
+5. Save Time with Aliases:
+   → Create shortcuts for common commands
+   → Add to your shell config file
+
+
+═══════════════════════════════════════════════════════════════════════
+
+For complete documentation, see START_HERE.md
+
+═══════════════════════════════════════════════════════════════════════
