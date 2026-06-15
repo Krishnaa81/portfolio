@@ -1,0 +1,78 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+endobj
+5 0 obj
+<< /Length 500 >>
+stream
+BT
+/F1 24 Tf
+50 750 Td
+(Krishna Reddy) Tj
+0 -30 Td
+/F1 12 Tf
+(Full Stack Developer) Tj
+0 -20 Td
+/F1 10 Tf
+(Email: krishnareddy9111@gmail.com) Tj
+0 -15 Td
+(Phone: +91 93927 13452) Tj
+0 -15 Td
+(LinkedIn: linkedin.com/in/krishnareddybattula) Tj
+0 -30 Td
+/F1 14 Tf
+(Education) Tj
+0 -20 Td
+/F1 10 Tf
+(B.Tech in Computer Science and Engineering) Tj
+0 -15 Td
+(Kalasalingam Academy of Research and Education) Tj
+0 -15 Td
+(2022 - 2026 | CGPA: 8.3/10) Tj
+0 -30 Td
+/F1 14 Tf
+(Skills) Tj
+0 -20 Td
+/F1 10 Tf
+(Languages: Java, JavaScript, Python, SQL) Tj
+0 -15 Td
+(Frontend: React.js, HTML5, CSS3, Tailwind CSS) Tj
+0 -15 Td
+(Backend: Node.js, Express.js, JDBC) Tj
+0 -15 Td
+(Tools: Git, GitHub, VS Code, MySQL) Tj
+0 -30 Td
+/F1 14 Tf
+(Projects) Tj
+0 -20 Td
+/F1 10 Tf
+(Library Management System | Java, JDBC, Swing) Tj
+0 -15 Td
+(SAM - Share A Meal | React.js, Node.js) Tj
+0 -15 Td
+(Parking Space Booking | Java, Servlets, MySQL) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000217 00000 n 
+0000000314 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+864
+%%EOF
