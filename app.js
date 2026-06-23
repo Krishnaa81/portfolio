@@ -322,7 +322,7 @@ class Portfolio {
               <div class="about-card">
                 <h3>Full Stack Developer & Data Analyst</h3>
                 <p>
-                  Computer Science Engineering graduate with hands-on experience in Python, SQL, Machine Learning, and data-driven application development.
+                  Computer Science Engineering graduate (B.Tech completed) with hands-on experience in Python, SQL, Machine Learning, and data-driven application development.
                 </p>
                 <p>
                   Worked on projects involving data analysis, predictive modeling, deep learning, and AI-powered solutions. Strong analytical and problem-solving skills with an interest in transforming data into meaningful insights and business solutions.
@@ -425,7 +425,7 @@ class Portfolio {
                   </svg>
                 </div>
                 <div class="education-info">
-                  <h3>Bachelor of Technology</h3>
+                  <h3>Bachelor of Technology ✓</h3>
                   <h4>Computer Science and Engineering</h4>
                   <p class="education-school">Kalasalingam Academy of Research and Education</p>
                   
@@ -458,10 +458,10 @@ class Portfolio {
               <div style="margin-top: 1.5rem">
                 <div class="education-progress-label">
                   <span>Academic Progress</span>
-                  <span>Currently in Final Year</span>
+                  <span>Degree Completed ✓</span>
                 </div>
                 <div class="progress-bar">
-                  <div class="progress-fill" style="width: 75%"></div>
+                  <div class="progress-fill" style="width: 100%"></div>
                 </div>
               </div>
             </div>
@@ -488,7 +488,7 @@ class Portfolio {
         features: ['Google Gemini AI Chatbot', 'Appointment Scheduling', 'Emergency Services', 'Authentication', 'Multi-User System', 'Interactive Maps'],
         emoji: '🏥',
         github: 'https://github.com/Krishnaa81/SMARTCLINIC-AI-Healthcare-Management-Platform',
-        image: 'https://images.unsplash.com/photo-1576091160550-112173f7f869?w=800&h=600&fit=crop'
+        image: 'https://images.unsplash.com/photo-1579154204601-01d82b27c9d4?w=800&h=600&fit=crop'
       },
       {
         title: 'Brain Tumor Detection using Swin Transformer',
@@ -505,7 +505,7 @@ class Portfolio {
         features: ['Swin Transformer Model', 'Image Preprocessing', 'Feature Extraction', 'Model Evaluation', 'Interactive Visualization'],
         emoji: '🧠',
         github: 'https://github.com/Krishnaa81/brain-tumor-detection',
-        image: 'https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=800&h=600&fit=crop'
+        image: 'https://images.unsplash.com/photo-1631217314830-4e9eefbb15d8?w=800&h=600&fit=crop'
       },
       {
         title: 'Plant Disease Detection AI',
@@ -522,7 +522,7 @@ class Portfolio {
         features: ['CNN Deep Learning', 'Data Augmentation', 'Disease Classification', 'Crop Recommendations', 'Treatment Suggestions'],
         emoji: '🌾',
         github: 'https://github.com/Krishnaa81/plant-disease-detection',
-        image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad576?w=800&h=600&fit=crop'
+        image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=600&fit=crop'
       }
     ];
 
