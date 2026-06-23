@@ -488,7 +488,7 @@ class Portfolio {
         features: ['Google Gemini AI Chatbot', 'Appointment Scheduling', 'Emergency Services', 'Authentication', 'Multi-User System', 'Interactive Maps'],
         emoji: '🏥',
         github: 'https://github.com/Krishnaa81/SMARTCLINIC-AI-Healthcare-Management-Platform',
-        image: 'https://images.pexels.com/photos/3786157/pexels-photo-3786157.jpeg?w=800&h=600&fit=crop'
+        image: 'https://via.placeholder.com/800x600/1a1a2e/00d4ff?text=SMARTCLINIC+AI+Healthcare'
       },
       {
         title: 'Brain Tumor Detection using Swin Transformer',
@@ -505,7 +505,7 @@ class Portfolio {
         features: ['Swin Transformer Model', 'Image Preprocessing', 'Feature Extraction', 'Model Evaluation', 'Interactive Visualization'],
         emoji: '🧠',
         github: 'https://github.com/Krishnaa81/brain-tumor-detection',
-        image: 'https://images.pexels.com/photos/8474386/pexels-photo-8474386.jpeg?w=800&h=600&fit=crop'
+        image: 'https://via.placeholder.com/800x600/1a1a2e/ff1493?text=Brain+Tumor+Detection+AI'
       },
       {
         title: 'Plant Disease Detection AI',
@@ -522,7 +522,7 @@ class Portfolio {
         features: ['CNN Deep Learning', 'Data Augmentation', 'Disease Classification', 'Crop Recommendations', 'Treatment Suggestions'],
         emoji: '🌾',
         github: 'https://github.com/Krishnaa81/plant-disease-detection',
-        image: 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&h=600&fit=crop'
+        image: 'https://via.placeholder.com/800x600/1a1a2e/32cd32?text=Plant+Disease+Detection+AI'
       }
     ];
 
