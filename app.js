@@ -362,12 +362,12 @@ class Portfolio {
 
   getSkills() {
     const skills = [
-      { name: 'HTML', icon: '🔧', color: 'from-orange-500 to-orange-600', level: 90 },
-      { name: 'CSS', icon: '🎨', color: 'from-blue-500 to-blue-600', level: 85 },
+      { name: 'Python', icon: '🐍', color: 'from-blue-500 to-blue-600', level: 95 },
+      { name: 'Machine Learning', icon: '🤖', color: 'from-purple-500 to-purple-600', level: 88 },
+      { name: 'Deep Learning', icon: '🧠', color: 'from-pink-500 to-pink-600', level: 85 },
+      { name: 'SQL', icon: '🗄️', color: 'from-green-500 to-green-600', level: 88 },
       { name: 'JavaScript', icon: '⚡', color: 'from-yellow-400 to-yellow-500', level: 80 },
-      { name: 'React', icon: '⚛️', color: 'from-cyan-400 to-cyan-500', level: 75 },
-      { name: 'Java', icon: '☕', color: 'from-red-500 to-red-600', level: 80 },
-      { name: 'SQL', icon: '🗄️', color: 'from-green-500 to-green-600', level: 75 }
+      { name: 'React', icon: '⚛️', color: 'from-cyan-400 to-cyan-500', level: 75 }
     ];
 
     const skillCards = skills.map((skill, index) => `
@@ -401,12 +401,14 @@ class Portfolio {
           <div class="other-skills">
             <h3>Other Technologies</h3>
             <div class="skills-tags">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Data Analysis</span>
               <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Tailwind CSS</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">Google Colab</span>
             </div>
           </div>
         </div>
@@ -482,52 +484,55 @@ class Portfolio {
   getProjects() {
     const projects = [
       {
-        title: 'Library Management System',
-        subtitle: 'Comprehensive Library Management with Real-time Tracking',
-        description: 'Production-ready library management application with intelligent book cataloging, member management, and automated fine calculation system.',
+        title: 'SMARTCLINIC AI - Healthcare Management Platform',
+        subtitle: 'AI-Powered Doctor Appointment System with Gemini Chatbot',
+        description: 'Healthcare management platform with intelligent appointment booking, patient management, and Google Gemini AI chatbot for symptom analysis and medical recommendations. Features multi-user dashboards for patients, doctors, and hospitals.',
         impacts: [
-          'Manages 1000+ books in searchable database',
-          'Automated issue/return tracking system',
-          'Real-time fine calculation with notifications'
+          'AI-powered symptom analysis and healthcare recommendations',
+          'Real-time appointment booking and management system',
+          'Role-based dashboards for patients, doctors, and hospitals',
+          'Location services for finding nearby hospitals'
         ],
-        frontend: ['Java Swing', 'AWT'],
-        backend: ['Java', 'JDBC'],
-        features: ['Database Management', 'User Authentication', 'Report Generation'],
-        emoji: '📚',
-        github: 'https://github.com/Krishnaa81/library-management',
-        image: 'https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=600&fit=crop'
+        frontend: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap 5'],
+        backend: ['Python', 'Flask', 'SQL', 'SQLAlchemy'],
+        features: ['Google Gemini AI Chatbot', 'Appointment Scheduling', 'Emergency Services', 'Authentication', 'Multi-User System', 'Interactive Maps'],
+        emoji: '🏥',
+        github: 'https://github.com/Krishnaa81/SMARTCLINIC-AI-Healthcare-Management-Platform',
+        image: 'https://images.unsplash.com/photo-1576091160550-112173f7f869?w=800&h=600&fit=crop'
       },
       {
-        title: 'SAM (Share A Meal)',
-        subtitle: 'Food Sharing Platform Connecting Communities',
-        description: 'Modern food sharing platform built with React, connecting people who want to share meals with those in need, promoting community engagement and reducing food waste.',
+        title: 'Brain Tumor Detection using Swin Transformer',
+        subtitle: 'AI-Powered Medical Image Analysis with Deep Learning',
+        description: 'Advanced AI system for brain tumor detection using MRI images with Swin Transformer architecture. Achieved 99.08% accuracy with data preprocessing, feature extraction, and model evaluation. Interactive Streamlit application for predictions.',
         impacts: [
-          'Connect food donors with recipients in real-time',
-          'Integrated location-based meal discovery',
-          'Automated notifications for new meal postings'
+          'Achieved 99.08% accuracy in tumor detection',
+          'Processed and analyzed MRI image datasets',
+          'Real-time prediction visualization interface',
+          'Data-driven medical diagnostic support'
         ],
-        frontend: ['React.js', 'TailwindCSS'],
-        backend: ['Node.js', 'Express.js'],
-        features: ['Real-time Updates', 'Geolocation', 'User Profiles'],
-        emoji: '🍽️',
-        github: 'https://github.com/Krishnaa81/share-a-meal',
-        image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop'
+        frontend: ['Streamlit', 'PyTorch'],
+        backend: ['Python', 'PyTorch', 'Deep Learning'],
+        features: ['Swin Transformer Model', 'Image Preprocessing', 'Feature Extraction', 'Model Evaluation', 'Interactive Visualization'],
+        emoji: '🧠',
+        github: 'https://github.com/Krishnaa81/brain-tumor-detection',
+        image: 'https://images.unsplash.com/photo-1576091160065-112f938368b6?w=800&h=600&fit=crop'
       },
       {
-        title: 'Parking Space Booking',
-        subtitle: 'Smart Parking Management with Real-time Availability',
-        description: 'Online platform for booking parking spaces in advance with real-time availability tracking, secure payment integration, and user-friendly interface.',
+        title: 'Plant Disease Detection AI',
+        subtitle: 'Deep Learning-Based Agricultural Diagnosis System',
+        description: 'Intelligent plant disease detection system using CNN and PlantVillage dataset. Classifies 39 plant disease categories with data augmentation and preprocessing. Flask web application with crop recommendations and treatment suggestions.',
         impacts: [
-          'Real-time parking slot availability tracking',
-          'Secure online booking and payment system',
-          'Dashboard for parking owners and users'
+          'Classified 39 plant disease categories with high accuracy',
+          'Data-driven agricultural decision support system',
+          'Automated crop recommendations and treatments',
+          'Integrated data augmentation and preprocessing'
         ],
-        frontend: ['HTML5', 'CSS3', 'JavaScript'],
-        backend: ['Java', 'Servlets'],
-        features: ['Booking System', 'Payment Integration', 'Admin Dashboard'],
-        emoji: '🚗',
-        github: 'https://github.com/Krishnaa81/parking-booking',
-        image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800&h=600&fit=crop'
+        frontend: ['Flask', 'HTML5', 'CSS3', 'JavaScript'],
+        backend: ['Python', 'PyTorch', 'SQL', 'SQLite'],
+        features: ['CNN Deep Learning', 'Data Augmentation', 'Disease Classification', 'Crop Recommendations', 'Treatment Suggestions'],
+        emoji: '🌾',
+        github: 'https://github.com/Krishnaa81/plant-disease-detection',
+        image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=600&fit=crop'
       }
     ];
 
