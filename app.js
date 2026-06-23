@@ -249,11 +249,11 @@ class Portfolio {
               <span class="text-gradient">Krishna Reddy</span>
             </h1>
 
-            <h2 style="animation-delay: 0.2s">Full Stack Developer & AI/ML Enthusiast</h2>
+            <h2 style="animation-delay: 0.2s">Full Stack Developer & Data Analyst</h2>
 
             <p style="animation-delay: 0.3s">
-              Computer Science graduate specializing in Python, Machine Learning, Deep Learning, and Full Stack Development. 
-              Passionate about building AI-powered solutions and responsive web applications with modern technologies.
+              Computer Science Engineering graduate with hands-on experience in Python, SQL, Machine Learning, and data-driven application development. 
+              Worked on projects involving data analysis, predictive modeling, deep learning, and AI-powered solutions.
             </p>
 
             <div class="hero-buttons" style="animation-delay: 0.4s">
@@ -320,19 +320,12 @@ class Portfolio {
 
             <div class="about-content">
               <div class="about-card">
-                <h3>Full Stack Developer & AI/ML Specialist</h3>
+                <h3>Full Stack Developer & Data Analyst</h3>
                 <p>
-                  I'm Krishna Reddy, a passionate Computer Science Engineering graduate currently pursuing my 
-                  Bachelor of Technology at Kalasalingam Academy of Research and Education (2022-2026) with a CGPA of 8.3/10.
+                  Computer Science Engineering graduate with hands-on experience in Python, SQL, Machine Learning, and data-driven application development.
                 </p>
                 <p>
-                  I specialize in building intelligent AI-powered solutions, full-stack web applications, and deep learning models. 
-                  My expertise spans Python, Java, Machine Learning, Deep Learning (PyTorch, Swin Transformer), and modern web technologies. 
-                  I have hands-on experience with data analysis, predictive modeling, and deploying ML models to production.
-                </p>
-                <p>
-                  I'm passionate about transforming data into actionable insights and creating user-friendly applications 
-                  that solve real-world problems in healthcare, agriculture, and technology domains.
+                  Worked on projects involving data analysis, predictive modeling, deep learning, and AI-powered solutions. Strong analytical and problem-solving skills with an interest in transforming data into meaningful insights and business solutions.
                 </p>
               </div>
 
@@ -360,11 +353,11 @@ class Portfolio {
   getSkills() {
     const skills = [
       { name: 'Python', icon: '🐍', color: 'from-blue-500 to-blue-600', level: 95 },
-      { name: 'Java', icon: '☕', color: 'from-red-500 to-red-600', level: 85 },
-      { name: 'Machine Learning', icon: '🤖', color: 'from-purple-500 to-purple-600', level: 88 },
-      { name: 'Deep Learning', icon: '🧠', color: 'from-pink-500 to-pink-600', level: 85 },
       { name: 'SQL', icon: '🗄️', color: 'from-green-500 to-green-600', level: 88 },
-      { name: 'JavaScript', icon: '⚡', color: 'from-yellow-400 to-yellow-500', level: 80 }
+      { name: 'Java', icon: '☕', color: 'from-red-500 to-red-600', level: 85 },
+      { name: 'JavaScript', icon: '⚡', color: 'from-yellow-400 to-yellow-500', level: 80 },
+      { name: 'React', icon: '⚛️', color: 'from-cyan-400 to-cyan-500', level: 75 },
+      { name: 'Flask', icon: '🔧', color: 'from-purple-500 to-purple-600', level: 80 }
     ];
 
     const skillCards = skills.map((skill, index) => `
@@ -398,13 +391,13 @@ class Portfolio {
           <div class="other-skills">
             <h3>Other Technologies</h3>
             <div class="skills-tags">
-              <span class="skill-tag">Flask</span>
               <span class="skill-tag">Pandas</span>
               <span class="skill-tag">NumPy</span>
               <span class="skill-tag">PyTorch</span>
               <span class="skill-tag">Streamlit</span>
               <span class="skill-tag">Data Analysis</span>
               <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
               <span class="skill-tag">Google Colab</span>
             </div>
           </div>
