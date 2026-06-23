@@ -249,11 +249,11 @@ class Portfolio {
               <span class="text-gradient">Krishna Reddy</span>
             </h1>
 
-            <h2 style="animation-delay: 0.2s">Full Stack Developer</h2>
+            <h2 style="animation-delay: 0.2s">Full Stack Developer & AI/ML Enthusiast</h2>
 
             <p style="animation-delay: 0.3s">
-              Passionate Full Stack Developer skilled in React.js, Java, SQL, and modern web technologies, 
-              focused on building responsive and user-friendly applications.
+              Computer Science graduate specializing in Python, Machine Learning, Deep Learning, and Full Stack Development. 
+              Passionate about building AI-powered solutions and responsive web applications with modern technologies.
             </p>
 
             <div class="hero-buttons" style="animation-delay: 0.4s">
@@ -320,22 +320,19 @@ class Portfolio {
 
             <div class="about-content">
               <div class="about-card">
-                <h3>Full Stack Developer</h3>
+                <h3>Full Stack Developer & AI/ML Specialist</h3>
                 <p>
-                  I'm Krishna Reddy, a passionate Full Stack Developer currently pursuing my 
-                  Bachelor of Technology in Computer Science and Engineering at Kalasalingam 
-                  Academy of Research and Education (2022-2026) with a CGPA of 8.3/10.
+                  I'm Krishna Reddy, a passionate Computer Science Engineering graduate currently pursuing my 
+                  Bachelor of Technology at Kalasalingam Academy of Research and Education (2022-2026) with a CGPA of 8.3/10.
                 </p>
                 <p>
-                  I specialize in creating modern, responsive web applications using 
-                  React.js for dynamic user interfaces and Java for robust backend solutions. 
-                  My expertise spans across HTML, CSS, JavaScript, React, Java, and SQL, 
-                  allowing me to build full-stack applications from concept to deployment.
+                  I specialize in building intelligent AI-powered solutions, full-stack web applications, and deep learning models. 
+                  My expertise spans Python, Java, Machine Learning, Deep Learning (PyTorch, Swin Transformer), and modern web technologies. 
+                  I have hands-on experience with data analysis, predictive modeling, and deploying ML models to production.
                 </p>
                 <p>
-                  I'm eager to contribute to innovative projects and continue learning 
-                  cutting-edge technologies. My goal is to build user-friendly applications 
-                  that solve real-world problems and make a positive impact.
+                  I'm passionate about transforming data into actionable insights and creating user-friendly applications 
+                  that solve real-world problems in healthcare, agriculture, and technology domains.
                 </p>
               </div>
 
@@ -363,11 +360,11 @@ class Portfolio {
   getSkills() {
     const skills = [
       { name: 'Python', icon: '🐍', color: 'from-blue-500 to-blue-600', level: 95 },
+      { name: 'Java', icon: '☕', color: 'from-red-500 to-red-600', level: 85 },
       { name: 'Machine Learning', icon: '🤖', color: 'from-purple-500 to-purple-600', level: 88 },
       { name: 'Deep Learning', icon: '🧠', color: 'from-pink-500 to-pink-600', level: 85 },
       { name: 'SQL', icon: '🗄️', color: 'from-green-500 to-green-600', level: 88 },
-      { name: 'JavaScript', icon: '⚡', color: 'from-yellow-400 to-yellow-500', level: 80 },
-      { name: 'React', icon: '⚛️', color: 'from-cyan-400 to-cyan-500', level: 75 }
+      { name: 'JavaScript', icon: '⚡', color: 'from-yellow-400 to-yellow-500', level: 80 }
     ];
 
     const skillCards = skills.map((skill, index) => `
@@ -515,7 +512,7 @@ class Portfolio {
         features: ['Swin Transformer Model', 'Image Preprocessing', 'Feature Extraction', 'Model Evaluation', 'Interactive Visualization'],
         emoji: '🧠',
         github: 'https://github.com/Krishnaa81/brain-tumor-detection',
-        image: 'https://images.unsplash.com/photo-1576091160065-112f938368b6?w=800&h=600&fit=crop'
+        image: 'https://images.unsplash.com/photo-1559027615-cd2628902d4a?w=800&h=600&fit=crop'
       },
       {
         title: 'Plant Disease Detection AI',
@@ -532,7 +529,7 @@ class Portfolio {
         features: ['CNN Deep Learning', 'Data Augmentation', 'Disease Classification', 'Crop Recommendations', 'Treatment Suggestions'],
         emoji: '🌾',
         github: 'https://github.com/Krishnaa81/plant-disease-detection',
-        image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=800&h=600&fit=crop'
+        image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad576?w=800&h=600&fit=crop'
       }
     ];
 

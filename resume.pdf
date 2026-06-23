@@ -9,57 +9,88 @@ endobj
 << /Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 5 0 R >>
 endobj
 4 0 obj
-<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
+<< /Font << /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >> /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> >> >>
 endobj
 5 0 obj
-<< /Length 500 >>
+<< /Length 1200 >>
 stream
 BT
-/F1 24 Tf
+/F1 20 Tf
 50 750 Td
-(Krishna Reddy) Tj
-0 -30 Td
-/F1 12 Tf
-(Full Stack Developer) Tj
-0 -20 Td
-/F1 10 Tf
-(Email: krishnareddy9111@gmail.com) Tj
+(KRISHNA REDDY) Tj
+0 -25 Td
+/F2 11 Tf
+(Full Stack Developer & AI/ML Specialist) Tj
 0 -15 Td
-(Phone: +91 93927 13452) Tj
-0 -15 Td
-(LinkedIn: linkedin.com/in/krishnareddybattula) Tj
+(Email: krishnareddy9111@gmail.com | Phone: +91 9392713452) Tj
+0 -12 Td
+(GitHub: github.com/Krishnaa81 | LinkedIn: linkedin.com/in/krishnareddybattula) Tj
 0 -30 Td
 /F1 14 Tf
-(Education) Tj
-0 -20 Td
-/F1 10 Tf
-(B.Tech in Computer Science and Engineering) Tj
-0 -15 Td
-(Kalasalingam Academy of Research and Education) Tj
-0 -15 Td
-(2022 - 2026 | CGPA: 8.3/10) Tj
-0 -30 Td
+(PROFESSIONAL SUMMARY) Tj
+0 -18 Td
+/F2 10 Tf
+(Computer Science graduate with expertise in Python, Machine Learning, Deep Learning,) Tj
+0 -12 Td
+(and Full Stack Development. Experienced in building AI-powered solutions and responsive) Tj
+0 -12 Td
+(web applications using modern technologies. Strong analytical and problem-solving skills.) Tj
+0 -25 Td
 /F1 14 Tf
-(Skills) Tj
-0 -20 Td
-/F1 10 Tf
-(Languages: Java, JavaScript, Python, SQL) Tj
-0 -15 Td
-(Frontend: React.js, HTML5, CSS3, Tailwind CSS) Tj
-0 -15 Td
-(Backend: Node.js, Express.js, JDBC) Tj
-0 -15 Td
-(Tools: Git, GitHub, VS Code, MySQL) Tj
-0 -30 Td
+(TECHNICAL SKILLS) Tj
+0 -18 Td
+/F2 10 Tf
+(Languages: Python, Java, JavaScript, SQL) Tj
+0 -12 Td
+(Machine Learning & AI: Machine Learning, Deep Learning, PyTorch, Swin Transformer) Tj
+0 -12 Td
+(Frontend: HTML5, CSS3, React.js, Streamlit, Bootstrap 5) Tj
+0 -12 Td
+(Backend: Flask, Python, Node.js, Express.js, JDBC) Tj
+0 -12 Td
+(Data Tools: Pandas, NumPy, Data Analysis, Exploratory Data Analysis) Tj
+0 -12 Td
+(Databases: MySQL, MongoDB, SQLite) Tj
+0 -12 Td
+(Tools & Platforms: Git, GitHub, VS Code, Google Colab, Flask) Tj
+0 -25 Td
 /F1 14 Tf
-(Projects) Tj
-0 -20 Td
-/F1 10 Tf
-(Library Management System | Java, JDBC, Swing) Tj
-0 -15 Td
-(SAM - Share A Meal | React.js, Node.js) Tj
-0 -15 Td
-(Parking Space Booking | Java, Servlets, MySQL) Tj
+(EDUCATION) Tj
+0 -18 Td
+/F2 10 Tf
+(Bachelor of Technology in Computer Science and Engineering) Tj
+0 -12 Td
+(Kalasalingam Academy of Research and Education, India | 2022 - 2026) Tj
+0 -12 Td
+(CGPA: 8.3/10) Tj
+0 -25 Td
+/F1 14 Tf
+(PROJECTS) Tj
+0 -18 Td
+/F2 10 Tf
+(1. SMARTCLINIC AI - Healthcare Management Platform) Tj
+0 -12 Td
+(    AI-powered appointment booking with Google Gemini AI chatbot | Python, Flask, SQL) Tj
+0 -18 Td
+(2. Brain Tumor Detection using Swin Transformer) Tj
+0 -12 Td
+(    Achieved 99.08% accuracy in MRI image analysis | Python, PyTorch, Streamlit) Tj
+0 -18 Td
+(3. Plant Disease Detection AI) Tj
+0 -12 Td
+(    Deep learning classification of 39 plant diseases | Python, Flask, CNN) Tj
+0 -25 Td
+/F1 14 Tf
+(ACHIEVEMENTS) Tj
+0 -18 Td
+/F2 10 Tf
+(- Participated in INNOV-AI 24 Hours Hackathon) Tj
+0 -12 Td
+(- Secured 2nd Prize in IBM-ICE Day Poster Presentation) Tj
+0 -12 Td
+(- Presented Brain Tumor Detection research at international conference) Tj
+0 -12 Td
+(- Database Management Systems Certification from CodeChef) Tj
 ET
 endstream
 endobj
@@ -70,9 +101,9 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000217 00000 n 
-0000000314 00000 n 
+0000000377 00000 n 
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-864
+1627
 %%EOF
