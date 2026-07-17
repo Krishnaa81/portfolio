@@ -1,16 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Reddy - Full Stack Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Krishna Reddy — Software & Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/react-icons@4.12.0/lib/index.js"></script>
-    <script src="app.js"></script>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo">RK<span class="dot">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#activity">Activity</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#" class="btn btn--sm btn--primary nav__resume" id="resumeBtnNav">Resume</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true">
+    <pre class="hero__code">public class Developer {
+  String name = "Krishna Reddy";
+  String[] core = {"Java","Spring Boot"};
+  boolean openToWork = true;
+
+  void build() {
+    while (learning) grow();
+  }
+}</pre>
+  </div>
+  <div class="hero__content">
+    <img src="profile.jpg" alt="Krishna Reddy" class="hero__photo">
+    <p class="eyebrow">&lt;/&gt; Hello, I'm</p>
+    <h1 class="hero__name">Krishna Reddy</h1>
+    <p class="hero__role">Software Developer &middot; Java &amp; Full Stack</p>
+    <p class="hero__desc">
+      Computer Science Engineering graduate with a strong interest in software
+      development and full stack engineering. Skilled in Java, Spring Boot, Python
+      and SQL, with growing experience in AWS Cloud and building complete,
+      production-style applications end to end.
+    </p>
+    <div class="hero__meta">
+      <span>📍 Ongole, India</span>
+      <span>🎓 CGPA 8.3/10</span>
+      <span>💼 Open to opportunities</span>
+    </div>
+    <div class="hero__cta">
+      <a href="#contact" class="btn btn--primary">Get In Touch</a>
+      <a href="#" class="btn btn--ghost" id="resumeBtn">Download Resume</a>
+      <a href="#projects" class="btn btn--ghost">View Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <p class="section__eyebrow">01 / About</p>
+  <h2 class="section__title">About Me</h2>
+
+  <div class="about__grid">
+    <div class="about__text">
+      <h3>Krishna Reddy</h3>
+      <p class="about__role">Software Developer &middot; Java &amp; Full Stack</p>
+      <p>
+        Computer Science Engineering graduate (B.Tech, 2022&ndash;2026) familiar with
+        Java, Python, SQL, Spring Boot, and modern web technologies, with basic
+        working knowledge of AWS Cloud.
+      </p>
+      <p>
+        Passionate about building efficient software solutions, learning new
+        technologies, and contributing to innovative projects in a collaborative
+        environment &mdash; from desktop applications with Java Swing to AI-powered
+        web platforms.
+      </p>
+      <div class="about__softskills">
+        <span class="softchip">Communication</span>
+        <span class="softchip">Teamwork</span>
+        <span class="softchip">Analytical Thinking</span>
+        <span class="softchip">Adaptability</span>
+        <span class="softchip">Quick Learner</span>
+      </div>
+    </div>
+
+    <div class="about__stats">
+      <div class="stat">
+        <span class="stat__num" data-count="6">0</span><span class="stat__plus">+</span>
+        <span class="stat__label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="10">0</span><span class="stat__plus">+</span>
+        <span class="stat__label">Tech &amp; Tools</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="2">0</span>
+        <span class="stat__label">Awards</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="100">0</span><span class="stat__plus">%</span>
+        <span class="stat__label">Dedication</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="skills" id="skills">
+  <p class="section__eyebrow">02 / Skills</p>
+  <h2 class="section__title">Technical Skills</h2>
+  <p class="section__sub">Java-first development, with a full stack of supporting tools</p>
+
+  <!-- Featured / primary skill -->
+  <div class="skill__featured">
+    <div class="skill__featured-icon">☕</div>
+    <div class="skill__featured-body">
+      <div class="skill__featured-top">
+        <h3>Java</h3>
+        <span class="skill__featured-badge">Primary Language</span>
+      </div>
+      <p>Core language for backend development, Spring Boot services, and desktop
+        applications (Java Swing + JDBC). Comfortable with OOP design, CRUD
+        operations, and building relational-database-backed applications.</p>
+      <div class="skillbar" data-level="92">
+        <div class="skillbar__track"><div class="skillbar__fill"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__categories">
+
+    <div class="skillcat">
+      <h4><span class="skillcat__icon">🧩</span> Languages</h4>
+      <div class="skillcat__list">
+        <div class="miniskill"><span>Java</span><div class="miniskill__track"><div class="miniskill__fill" data-level="92"></div></div></div>
+        <div class="miniskill"><span>Python</span><div class="miniskill__track"><div class="miniskill__fill" data-level="88"></div></div></div>
+        <div class="miniskill"><span>SQL</span><div class="miniskill__track"><div class="miniskill__fill" data-level="85"></div></div></div>
+        <div class="miniskill"><span>JavaScript</span><div class="miniskill__track"><div class="miniskill__fill" data-level="75"></div></div></div>
+      </div>
+    </div>
+
+    <div class="skillcat">
+      <h4><span class="skillcat__icon">🌐</span> Web Technologies</h4>
+      <div class="skillcat__list">
+        <div class="miniskill"><span>Spring Boot</span><div class="miniskill__track"><div class="miniskill__fill" data-level="80"></div></div></div>
+        <div class="miniskill"><span>HTML5 / CSS3</span><div class="miniskill__track"><div class="miniskill__fill" data-level="85"></div></div></div>
+        <div class="miniskill"><span>Streamlit</span><div class="miniskill__track"><div class="miniskill__fill" data-level="78"></div></div></div>
+        <div class="miniskill"><span>REST APIs</span><div class="miniskill__track"><div class="miniskill__fill" data-level="80"></div></div></div>
+      </div>
+    </div>
+
+    <div class="skillcat">
+      <h4><span class="skillcat__icon">🗄️</span> Databases</h4>
+      <div class="skillcat__list">
+        <div class="miniskill"><span>MySQL</span><div class="miniskill__track"><div class="miniskill__fill" data-level="85"></div></div></div>
+        <div class="miniskill"><span>MongoDB</span><div class="miniskill__track"><div class="miniskill__fill" data-level="70"></div></div></div>
+        <div class="miniskill"><span>JDBC</span><div class="miniskill__track"><div class="miniskill__fill" data-level="82"></div></div></div>
+      </div>
+    </div>
+
+    <div class="skillcat">
+      <h4><span class="skillcat__icon">☁️</span> Cloud &amp; Tools</h4>
+      <div class="skillcat__list">
+        <div class="miniskill"><span>AWS (Basics)</span><div class="miniskill__track"><div class="miniskill__fill" data-level="55"></div></div></div>
+        <div class="miniskill"><span>Git / GitHub</span><div class="miniskill__track"><div class="miniskill__fill" data-level="85"></div></div></div>
+        <div class="miniskill"><span>VS Code / Eclipse</span><div class="miniskill__track"><div class="miniskill__fill" data-level="88"></div></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skills__tags">
+    <h4>Core &amp; Soft Skills</h4>
+    <div class="tag__list">
+      <span class="tag">CRUD Operations</span>
+      <span class="tag">Database Management</span>
+      <span class="tag">Problem Solving</span>
+      <span class="tag">Google Colab</span>
+      <span class="tag">Software Development</span>
+      <span class="tag">Analytical Thinking</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CODING ACTIVITY ===== -->
+<section class="activity" id="activity">
+  <p class="section__eyebrow">03 / Activity</p>
+  <h2 class="section__title">Coding Activity</h2>
+  <p class="section__sub">Live snapshot of my GitHub &mdash; set your username in script.js to activate</p>
+
+  <div class="activity__card" id="activityCard">
+    <div class="activity__row">
+      <div class="activity__stat">
+        <span class="activity__num" id="repoCount">--</span>
+        <span class="activity__label">Public Repos</span>
+      </div>
+      <div class="activity__stat">
+        <span class="activity__num" id="followerCount">--</span>
+        <span class="activity__label">Followers</span>
+      </div>
+      <div class="activity__stat">
+        <span class="activity__num" id="lastActive">--</span>
+        <span class="activity__label">Last Active</span>
+      </div>
+    </div>
+    <p class="activity__note" id="activityNote">
+      Add your GitHub username in <code>app.js</code> (GITHUB_USERNAME) to pull this live.
+    </p>
+    <a href="https://github.com/Krishnaa81" id="githubLink" class="btn btn--sm btn--ghost" target="_blank" rel="noopener">View GitHub Profile →</a>
+  </div>
+
+  <div class="codingprofiles">
+    <h4>Coding Profiles</h4>
+    <div class="codingprofiles__list">
+      <!-- TODO: double-check this CodeChef URL, it was cut off in the screenshot -->
+      <a href="https://www.codechef.com/users/kl_9922004149" target="_blank" rel="noopener" class="profilechip profilechip--codechef">🍮 CodeChef</a>
+      <a href="#" target="_blank" rel="noopener" class="profilechip profilechip--leetcode">⚡ LeetCode</a>
+      <a href="#" target="_blank" rel="noopener" class="profilechip profilechip--gfg">🧮 GeeksforGeeks</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="education" id="education">
+  <p class="section__eyebrow">04 / Education</p>
+  <h2 class="section__title">Education</h2>
+  <p class="section__sub">Academic background</p>
+
+  <div class="edu__card">
+    <div class="edu__top">
+      <h3>Bachelor of Technology <span class="check">✓</span></h3>
+      <span class="edu__years">2022 - 2026</span>
+    </div>
+    <p class="edu__degree">Computer Science and Engineering</p>
+    <p class="edu__school">Kalasalingam Academy of Research and Education, Tamil Nadu, India</p>
+    <p class="edu__cgpa">CGPA: 8.3/10</p>
+    <div class="edu__progress">
+      <span>Academic Progress</span>
+      <div class="edu__track"><div class="edu__fill"></div></div>
+      <span class="edu__status">On Track ✓</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects" id="projects">
+  <p class="section__eyebrow">05 / Projects</p>
+  <h2 class="section__title">Featured Projects</h2>
+  <p class="section__sub">Selected academic and independent work</p>
+
+  <div class="projects__grid">
+
+    <article class="project project--featured">
+      <div class="project__head">
+        <span class="project__emoji">🍱</span>
+        <h3>SAM &mdash; Share A Meal</h3>
+        <p class="project__tag">Food Donation &amp; Delivery Platform</p>
+      </div>
+      <p class="project__desc">
+        Food donation and delivery platform connecting donors, NGOs, and users in
+        need, aimed at reducing food waste and getting surplus meals to the
+        people who need them.
+      </p>
+      <ul class="project__impact">
+        <li>Connects donors, NGOs, and recipients on one platform</li>
+        <li>Streamlines pickup and delivery coordination</li>
+        <li>Built as an independent full stack project</li>
+      </ul>
+      <div class="project__stack">
+        <span>JavaScript</span><span>HTML</span><span>CSS</span>
+      </div>
+      <div class="project__links">
+        <a href="https://github.com/Krishnaa81/SAM-Share-A-Meal-" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">View Code</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="project__emoji">📚</span>
+        <h3>Library Management System</h3>
+        <p class="project__tag">Java Swing Desktop Application &middot; 2025</p>
+      </div>
+      <p class="project__desc">
+        Desktop-based library management system built with Java Swing and MySQL to
+        manage books, members, and transactions, with full CRUD operations via JDBC.
+      </p>
+      <ul class="project__impact">
+        <li>CRUD operations for book management, registration, issue &amp; return</li>
+        <li>Relational database design for efficient record storage/retrieval</li>
+        <li>User-friendly GUI with proper input validation</li>
+      </ul>
+      <div class="project__stack">
+        <span>Java</span><span>Java Swing</span><span>JDBC</span><span>MySQL</span><span>SQL</span>
+      </div>
+      <div class="project__links">
+        <a href="https://github.com/Krishnaa81/Library-Management-System" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">View Code</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="project__emoji">🏥</span>
+        <h3>SmartClinic AI</h3>
+        <p class="project__tag">Healthcare Management Platform &middot; 2026</p>
+      </div>
+      <p class="project__desc">
+        Healthcare management platform with appointment booking and patient
+        management, integrating a Google Gemini AI chatbot for symptom analysis
+        and healthcare recommendations.
+      </p>
+      <ul class="project__impact">
+        <li>Google Gemini AI chatbot for symptom analysis</li>
+        <li>Patient &amp; appointment data managed via SQL databases</li>
+        <li>Role-based dashboards with secure authentication</li>
+      </ul>
+      <div class="project__stack">
+        <span>Python</span><span>Flask</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Gemini AI</span>
+      </div>
+      <div class="project__links">
+        <a href="https://github.com/Krishnaa81/SMARTCLINIC-AI-Healthcare-Management-Platform" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">View Code</a>
+        <a href="#" class="btn btn--sm btn--primary">View Live Demo</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="project__emoji">🧠</span>
+        <h3>Brain Tumor Detection</h3>
+        <p class="project__tag">Swin Transformer &middot; 2026</p>
+      </div>
+      <p class="project__desc">
+        AI-powered brain tumor detection system using MRI image datasets, with
+        data preprocessing, feature extraction, and model evaluation, achieving
+        99.08% accuracy. Presented at an international conference.
+      </p>
+      <ul class="project__impact">
+        <li>99.08% detection accuracy</li>
+        <li>Streamlit app for prediction &amp; result visualization</li>
+        <li>Presented as research work at an international conference</li>
+      </ul>
+      <div class="project__stack">
+        <span>Python</span><span>PyTorch</span><span>Pandas</span><span>NumPy</span><span>Streamlit</span>
+      </div>
+      <div class="project__links">
+        <a href="https://github.com/Krishnaa81/Brain-Tumor-Detection-using-Swin-Transformer" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">View Code</a>
+        <a href="#" class="btn btn--sm btn--primary">View Live Demo</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="project__emoji">✍️</span>
+        <h3>Signature Matching</h3>
+        <p class="project__tag">Signature Verification System</p>
+      </div>
+      <p class="project__desc">
+        A Python-based signature verification tool that compares a submitted
+        signature against a reference sample to help flag forged or mismatched
+        signatures using image processing techniques.
+      </p>
+      <ul class="project__impact">
+        <li>Image preprocessing and feature comparison for signature matching</li>
+        <li>Flags potential forgeries by comparing against a reference sample</li>
+        <li>Useful for document verification and authentication workflows</li>
+      </ul>
+      <div class="project__stack">
+        <span>Python</span><span>Image Processing</span>
+      </div>
+      <div class="project__links">
+        <a href="https://github.com/Krishnaa81/Signature-matching" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">View Code</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project__head">
+        <span class="project__emoji">🌾</span>
+        <h3>Plant Disease Detection AI</h3>
+        <p class="project__tag">Deep Learning-Based Agricultural Diagnosis System</p>
+      </div>
+      <p class="project__desc">
+        Intelligent plant disease detection system using CNN and the PlantVillage
+        dataset. Classifies 39 plant disease categories with data augmentation and
+        preprocessing. Flask web app with crop recommendations and treatment
+        suggestions.
+      </p>
+      <ul class="project__impact">
+        <li>Classified 39 plant disease categories with high accuracy</li>
+        <li>Automated crop recommendations and treatment suggestions</li>
+        <li>Integrated data augmentation and preprocessing pipeline</li>
+      </ul>
+      <div class="project__stack">
+        <span>Flask</span><span>Python</span><span>PyTorch</span><span>SQL</span><span>SQLite</span>
+      </div>
+      <div class="project__links">
+        <!-- TODO: add your real repo link here — this project wasn't in your GitHub popular repos list, so I couldn't confirm the URL -->
+        <a href="#" class="btn btn--sm btn--ghost">View Code</a>
+        <a href="#" class="btn btn--sm btn--primary">View Live Demo</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section class="achievements" id="achievements">
+  <p class="section__eyebrow">06 / Achievements</p>
+  <h2 class="section__title">Achievements &amp; Certifications</h2>
+
+  <div class="achieve__grid">
+    <div class="achieve__card">
+      <span class="achieve__icon">🏆</span>
+      <p class="achieve__title">2nd Prize</p>
+      <p class="achieve__desc">IBM-ICE Day Poster Presentation competition</p>
+    </div>
+    <div class="achieve__card">
+      <span class="achieve__icon">⚡</span>
+      <p class="achieve__title">INNOV-AI Hackathon</p>
+      <p class="achieve__desc">Participated in the 24-hour hackathon</p>
+    </div>
+    <div class="achieve__card">
+      <span class="achieve__icon">🎤</span>
+      <p class="achieve__title">Conference Presentation</p>
+      <p class="achieve__desc">Presented research on Brain Tumor Detection using Swin Transformer</p>
+    </div>
+    <div class="achieve__card">
+      <span class="achieve__icon">📜</span>
+      <p class="achieve__title">DBMS Certification</p>
+      <p class="achieve__desc">Database Management Systems &mdash; CodeChef</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <p class="section__eyebrow">07 / Contact</p>
+  <h2 class="section__title">Get In Touch</h2>
+  <p class="section__sub">Open to software development and full stack opportunities</p>
+
+  <div class="contact__grid">
+    <div class="contact__info">
+      <h3>Contact Information</h3>
+
+      <div class="info__item">
+        <span class="info__icon">✉️</span>
+        <div>
+          <p class="info__label">Email</p>
+          <p class="info__value">krishnareddy9111@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="info__item">
+        <span class="info__icon">📞</span>
+        <div>
+          <p class="info__label">Phone</p>
+          <p class="info__value">+91 93927 13452</p>
+        </div>
+      </div>
+
+      <div class="info__item">
+        <span class="info__icon">📍</span>
+        <div>
+          <p class="info__label">Location</p>
+          <p class="info__value">Ongole, India</p>
+        </div>
+      </div>
+
+      <div class="info__item">
+        <span class="info__icon">🔗</span>
+        <div>
+          <p class="info__label">LinkedIn</p>
+          <p class="info__value">linkedin.com/in/krishnareddybattula</p>
+        </div>
+      </div>
+
+      <div class="info__item">
+        <span class="info__icon">💻</span>
+        <div>
+          <p class="info__label">GitHub</p>
+          <p class="info__value" id="githubHandleText">github.com/Krishnaa81</p>
+        </div>
+      </div>
+
+      <div class="info__note">
+        <h4>Languages</h4>
+        <div class="lang__list">
+          <span class="tag">Telugu (Native)</span>
+          <span class="tag">English (Professional)</span>
+          <span class="tag">Hindi (Basic)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__form-wrap">
+      <h3>Send Me a Message</h3>
+      <div class="contact__form" id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="your.email@example.com">
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="What's this about?">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Your message here..."></textarea>
+
+        <button type="button" class="btn btn--primary btn--full" id="sendBtn">Send Message</button>
+        <p class="form__status" id="formStatus"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__about">
+      <p class="footer__name">Krishna Reddy</p>
+      <p class="footer__desc">
+        Software developer focused on Java and full stack development, building
+        efficient, well-tested applications and always learning new technologies.
+      </p>
+    </div>
+
+    <div class="footer__links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__connect">
+      <h4>Connect With Me</h4>
+      <div class="footer__socials">
+        <a href="mailto:krishnareddy9111@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://linkedin.com/in/krishnareddybattula" aria-label="LinkedIn">🔗</a>
+        <a href="https://github.com/Krishnaa81" aria-label="GitHub" id="githubSocialLink" target="_blank" rel="noopener">💻</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>Made with <span class="heart">♥</span> by Krishna Reddy</p>
+    <p>© 2026 All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="scrollTop" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="app.js"></script>
 </body>
 </html>
