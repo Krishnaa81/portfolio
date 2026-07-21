@@ -115,7 +115,7 @@ const resumeBtnNav = document.getElementById('resumeBtnNav');
 
 // Direct-download form of your Google Drive share link.
 // If you ever swap the resume file, just replace this ID with the new one.
-const RESUME_DRIVE_ID = '1F3PspbupWRcOMmeMb1PZ_ypdptedDBD6';
+const RESUME_DRIVE_ID = '1PCDFKE4UxMj7WFLElKG5On6n6xwEqIm1';
 const RESUME_URL = `https://drive.google.com/uc?export=download&id=${RESUME_DRIVE_ID}`;
 
 [resumeBtn, resumeBtnNav].forEach(btn => {
